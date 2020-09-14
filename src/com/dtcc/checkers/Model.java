@@ -1,13 +1,15 @@
 package com.dtcc.checkers;
 
 public class Model {
-
+	
+	String [][]board=new String[8][8];
+	
     public String[][] update(Move move){
-        return  null;
+        return  board;
     }
 
     public String[][] getBoard() {
-        	String [][]board=new String[8][8];
+        		board=new String[8][8];
         	     for (int row = 0; row < 8; row++) {
                     for (int col = 0; col < 8; col++) {
                         if (row % 2 != col % 2 ) {
