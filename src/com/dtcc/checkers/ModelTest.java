@@ -17,15 +17,19 @@ class ModelTest {
 	@Test
 	public void getBoradTest() {
 		 String[][] expected = new String[8][8];
-//		model.getBoard();
 		 assertEquals(expected.length,model.getBoard().length);
 	}
 	@Test
 	public void getBoradIndexTest() {
-		//Model model = new Model();
 		 String expected = "R-P";
 		String[][] actual = model.getBoard();
 		 assertEquals(expected, actual[1][2]);
+	}
+	@Test
+	public void getBoradIndexLastTest() {
+		 String expected = "B-P";
+		String[][] actual = model.getBoard();
+		 assertEquals(expected, actual[7][4]);
 	}
 //	@Test
 //	public void saveFileTest() {
