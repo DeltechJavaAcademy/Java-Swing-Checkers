@@ -132,7 +132,5 @@ public class Model {
 		}
 	}
 	
-
-
     public void load(){}
 }
